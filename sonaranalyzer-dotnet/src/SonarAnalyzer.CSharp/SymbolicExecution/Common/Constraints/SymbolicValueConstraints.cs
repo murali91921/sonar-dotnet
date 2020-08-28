@@ -50,7 +50,7 @@ namespace SonarAnalyzer.SymbolicExecution.Constraints
             obj is SymbolicValueConstraints other
             && constraints.DictionaryEquals(other.constraints);
 
-        // for debugging
+        // for debugging and error logging
         public override string ToString() =>
             string.Join(", ", constraints.Values);
 
